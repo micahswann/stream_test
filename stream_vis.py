@@ -117,4 +117,4 @@ plot(fig)
 
 pio.renderers.default = 'svg'
 pio.renderers.default = 'browser'
-#pio.write_html(fig, file='index.html', auto_open=True)
+pio.write_html(fig, file='index.html', auto_open=True)
