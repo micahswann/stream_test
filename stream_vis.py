@@ -61,8 +61,9 @@ stage_data = go.Scatter(x=stage.index,
                         name='Stage',
                         yaxis='y2')
 
-layout = go.Layout(height=600, width=1000, font=dict(size=20),
+layout = go.Layout(height=700, width=1000, font=dict(size=20),
                    title=name,
+                   
                    xaxis=dict(title='Date',
                                         # Range selector with buttons
                                          rangeselector=dict(
@@ -103,6 +104,13 @@ layout = go.Layout(height=600, width=1000, font=dict(size=20),
                    
 fig = go.Figure(data=[flow_data,stage_data],layout=layout)
 
+fig.update_layout(
+    title={
+        'y':0.9,
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'})
+    
 
 plot(fig)
 
