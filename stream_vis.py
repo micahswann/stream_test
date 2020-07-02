@@ -89,6 +89,8 @@ layout = go.Layout(height=700, width=1000, font=dict(size=20),
                                                       label='12h',
                                                       step='hour',
                                                       stepmode='backward'),
+                                                  # Entire Scale                                                     # Entire scale
+                                                 dict(step='all')
                                              ])
                                          ),
                                          # Sliding for selecting time window
